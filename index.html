@@ -6,47 +6,60 @@
   <title>Portfolio | Jordan González Figueroa</title>
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            azulQA: '#0077FF',   // Azul eléctrico
+            verdeQA: '#00C853',  // Verde QA
+            grisFondo: '#F5F5F5'
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-grisFondo text-gray-800 font-sans">
 
   <!-- Header -->
-  <header class="bg-gray-900 text-white text-center py-12 shadow-lg">
+  <header class="bg-azulQA text-white text-center py-12 shadow-lg">
     <h1 class="text-4xl font-bold">Jordan González Figueroa</h1>
     <p class="text-xl mt-2">Senior QA Engineer | Data Validation & ETL Testing</p>
-    <a href="#contacto" class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition">Contáctame</a>
+    <a href="#contacto" class="mt-4 inline-block bg-verdeQA hover:bg-green-600 text-white px-6 py-2 rounded-lg transition">Contáctame</a>
   </header>
 
   <!-- Sobre mí -->
   <section class="max-w-5xl mx-auto p-8">
-    <h2 class="text-3xl font-semibold text-blue-600 mb-4">Sobre mí</h2>
-    <p class="text-lg leading-relaxed">Soy ingeniero en computación con más de 8 años de experiencia en QA manual, validación de datos y pruebas ETL. Combino precisión técnica con creatividad para optimizar procesos y asegurar productos confiables.</p>
+    <h2 class="text-3xl font-semibold text-azulQA mb-4">Sobre mí</h2>
+    <p class="text-lg leading-relaxed">Soy ingeniero en computación con 10 años de experiencia en QA manual, validación de datos y pruebas ETL. Combino precisión técnica con creatividad para optimizar procesos y asegurar productos confiables.</p>
   </section>
 
   <!-- Habilidades -->
   <section class="max-w-5xl mx-auto p-8">
-    <h2 class="text-3xl font-semibold text-blue-600 mb-6">Habilidades</h2>
+    <h2 class="text-3xl font-semibold text-azulQA mb-6">Habilidades</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      <div class="bg-white shadow-md p-4 rounded-lg hover:scale-105 transition"><strong>Testing</strong><br>Manual, funcional, regresión</div>
-      <div class="bg-white shadow-md p-4 rounded-lg hover:scale-105 transition"><strong>Herramientas</strong><br>JIRA, Azure DevOps, Postman</div>
-      <div class="bg-white shadow-md p-4 rounded-lg hover:scale-105 transition"><strong>Datos & Automatización</strong><br>SQL, ETL, JMeter, Selenium</div>
-      <div class="bg-white shadow-md p-4 rounded-lg hover:scale-105 transition"><strong>Soft Skills</strong><br>Comunicación, colaboración</div>
+      <div class="bg-white shadow-md p-4 rounded-lg hover:scale-105 transition border-t-4 border-verdeQA"><strong>Testing</strong><br>Manual, funcional, regresión</div>
+      <div class="bg-white shadow-md p-4 rounded-lg hover:scale-105 transition border-t-4 border-verdeQA"><strong>Herramientas</strong><br>JIRA, Azure DevOps, Postman</div>
+      <div class="bg-white shadow-md p-4 rounded-lg hover:scale-105 transition border-t-4 border-verdeQA"><strong>Datos & Automatización</strong><br>SQL, ETL, JMeter, Selenium</div>
+      <div class="bg-white shadow-md p-4 rounded-lg hover:scale-105 transition border-t-4 border-verdeQA"><strong>Soft Skills</strong><br>Comunicación, colaboración</div>
     </div>
   </section>
 
   <!-- Experiencia -->
   <section class="max-w-5xl mx-auto p-8">
-    <h2 class="text-3xl font-semibold text-blue-600 mb-6">Experiencia</h2>
+    <h2 class="text-3xl font-semibold text-azulQA mb-6">Experiencia</h2>
     <div class="space-y-4">
-      <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-xl transition">
-        <h3 class="font-bold text-xl">Wipro Technologies (2023–2025)</h3>
+      <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-xl transition border-l-4 border-verdeQA">
+        <h3 class="font-bold text-xl text-azulQA">Wipro Technologies (2023–2025)</h3>
         <p>Lideré validaciones de datos y pruebas ETL en proyectos críticos.</p>
       </div>
-      <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-xl transition">
-        <h3 class="font-bold text-xl">Smartmatic (2019–2023)</h3>
+      <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-xl transition border-l-4 border-verdeQA">
+        <h3 class="font-bold text-xl text-azulQA">Smartmatic (2019–2023)</h3>
         <p>Pruebas de integración HW/SW y automatización básica.</p>
       </div>
-      <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-xl transition">
-        <h3 class="font-bold text-xl">INE (2015–2018)</h3>
+      <div class="bg-white shadow-md p-6 rounded-lg hover:shadow-xl transition border-l-4 border-verdeQA">
+        <h3 class="font-bold text-xl text-azulQA">INE (2015–2018)</h3>
         <p>QA en sistemas electorales, optimización de procesos.</p>
       </div>
     </div>
@@ -54,14 +67,14 @@
 
   <!-- Proyectos -->
   <section class="max-w-5xl mx-auto p-8">
-    <h2 class="text-3xl font-semibold text-blue-600 mb-6">Proyectos</h2>
+    <h2 class="text-3xl font-semibold text-azulQA mb-6">Proyectos</h2>
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white shadow-md p-6 rounded-lg hover:scale-105 transition">
-        <h3 class="font-bold text-lg">Validación de datos financieros</h3>
+      <div class="bg-white shadow-md p-6 rounded-lg hover:scale-105 transition border-b-4 border-verdeQA">
+        <h3 class="font-bold text-lg text-azulQA">Validación de datos financieros</h3>
         <p>Reducción de defectos en producción en un 20%.</p>
       </div>
-      <div class="bg-white shadow-md p-6 rounded-lg hover:scale-105 transition">
-        <h3 class="font-bold text-lg">Automatización de APIs</h3>
+      <div class="bg-white shadow-md p-6 rounded-lg hover:scale-105 transition border-b-4 border-verdeQA">
+        <h3 class="font-bold text-lg text-azulQA">Automatización de APIs</h3>
         <p>Pruebas funcionales con Postman y Selenium.</p>
       </div>
     </div>
@@ -69,7 +82,7 @@
 
   <!-- Educación -->
   <section class="max-w-5xl mx-auto p-8">
-    <h2 class="text-3xl font-semibold text-blue-600 mb-6">Educación & Certificaciones</h2>
+    <h2 class="text-3xl font-semibold text-azulQA mb-6">Educación & Certificaciones</h2>
     <ul class="list-disc pl-6 space-y-2">
       <li>Ingeniería en Computación – UPVM</li>
       <li>Técnico en Mantenimiento de Sistemas – CECyTEM</li>
@@ -78,10 +91,11 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="bg-gray-900 text-white text-center py-8">
+  <section id="contacto" class="bg-azulQA text-white text-center py-8">
     <h2 class="text-2xl font-semibold mb-4">Contacto</h2>
-    <p>📧 <a href="mailto:tuemail@gmail.com" class="text-blue-400">tuemail@gmail.com</a></p>
-    <p>🔗 <a href="https://linkedin.com/in/tuusuario" class="text-blue-400">LinkedIn</a></p>
+    <p>📧 <a href="mailto:tuemail@gmail.com" class="text-verdeQA">tuemail@gmail.com</a></p>
+    <p>🔗 <a href="https://linkedin.com/in/tuusuario" class="text-verdeQA">LinkedIn</a></p>
   </section>
 
 </body>
+</html>
